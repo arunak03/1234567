@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#" id="product" class="nav-link active-link" onclick="showSegment('product_detail','product')">Product Details</a></li>
+                <li><a href="#" id="info" class="nav-link" onclick="showSegment('product_information','info')">Information</a></li>
+                <li><a href="#" id="reviews" class="nav-link" onclick="showSegment('review_tab','reviews')">Reviews</a></li>
+                <li><a href="#" id="sellerinfo" class="nav-link" onclick="showSegment('seller_info','sellerinfo')">Seller Info</a></li>
+            </ul>
+            <div class="active-line">  <div class="grey-line"></div></div>
+        </nav>
+        <br>
+
+        <div class="segment" id="product_detail">
+            <!-- Content for the "Product Details" section -->
+        </div>
+        <div class="segment" id="product_information">
+            <!-- Content for the "Information" section -->
+        </div>
+        <div class="segment" id="review_tab">
+            <!-- Content for the "Reviews" section -->
+        </div>
+        <div class="segment" id="seller_info">
+            <!-- Content for the "Seller Info" section -->
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
