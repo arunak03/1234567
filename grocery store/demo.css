@@ -1,0 +1,53 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: black;
+    position: relative;
+}
+
+.nav-link::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: transparent;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s, background-color 0.3s;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+    background-color: green;
+}
+
+.nav-link:active::after {
+    width: 100%;
+    background-color: green;
+}
+
+.active-line {
+    width: 0;
+    height: 2px;
+    background-color: transparent;
+    transition: width 0.3s, background-color 0.3s;
+}
+
+.section {
+    display: none;
+}
+
+.section:target {
+    display: block;
+}
+
+.nav-link:target::after,
+.nav-link.active-link::after {
+    width: 100%;
+    background-color: green;
+}

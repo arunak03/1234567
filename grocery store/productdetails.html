@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+    <nav class="navbar">
+        <ul>
+            <li><a href="#" id="product" class="nav-link active-link" onclick="showSegment('product_detail','product')">Product Details</a></li>
+            <li><a href="#" id="info" class="nav-link" onclick="showSegment('product_information','info')">Information</a></li>
+            <li><a href="#" id="reviews"class="nav-link" onclick="showSegment('review_tab','reviews')">Reviews</a></li>
+            <li><a href="#" id="sellerinfo" class="nav-link"  onclick="showSegment('seller_info','sellerinfo')">Seller Info</a></li>
+        </ul>
+        <div class="active-line"></div>
+        
+    </nav>
+    <br>
+
+    <div class="segment" id="product_detail">
+        <h1>Nutrient Value & Benefits</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia tenetur rerum in beatae earum, dignissimos optio repellat repudiandae suscipit eligendi ad, mollitia omnis placeat blanditiis voluptas, itaque quisquam sed illo porro! Voluptas tenetur minus ea inventore repellat dolorem, cumque libero quibusdam? Minima, laborum. Molestiae repellat repudiandae facilis voluptatum nemo quia.</p>
+        <h2>Storage Tips</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A ab error quod aspernatur, adipisci ducimus cupiditate rem officia esse maxime iusto placeat nam sapiente dignissimos iste vero reprehenderit doloremque voluptatem?</p>
+
+    </div>
+    <div class="segment" id="product_information">
+        <h3>Details</h3>
+        <table>
+            <tr>
+                <td>Weight</td>
+                <td>1000 Grams</td>
+            </tr>
+            <tr>
+                <td>Ingredient Type</td>
+                <td>Vegetarian</td>
+            </tr>
+            <tr>
+                <td>Brand</td>
+                <td>Dmart</td>
+            </tr>
+            <tr>
+                <td>Item Package Quantity</td>
+                <td>1</td>
+            </tr>
+        </table>
+    </div>
+    <div class="segment" id="review_tab"><h4>--need to be added--</h4></div>
+    <div class="segment" id="seller_info"><h4>--need to be added--</h4></div>
+</section>
+    <script src="script.js"></script>
+</body>
+</html>
