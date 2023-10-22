@@ -96,3 +96,40 @@ a:active,a:hover{
 .clear{
     clear: both;
 }
+
+@media screen and (max-width: 740px) {
+    #infopage {
+        width: 100%;
+        margin: 5px;
+        font-family: sans-serif;
+    }
+
+    .navbar ul {
+        justify-content: center;
+    }
+
+    .navbar li {
+        margin: 0;
+        text-align: center;
+    }
+
+    .navbar li a {
+        padding: 10px;
+    }
+
+    .segment {
+        width: 100%;
+    }
+
+    .active-line {
+        bottom: -6px;
+    }
+    .table-container {
+        float: none;
+        width: 100%;
+        margin: 2% 0;
+    }
+
+  
+}
+
